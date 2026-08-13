@@ -64,11 +64,11 @@ export default function SignInPage() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-50 p-6">
-      <div className="flex w-full max-w-6xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <div className="flex w-full max-w-7xl min-h-[560px] overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
         {/* Left panel */}
-        <div className="hidden w-1/2 flex-col justify-between bg-[#0f2a4a] p-10 text-white md:flex">
+        <div className="hidden w-2/5 flex-col justify-between bg-[#0f2a4a] p-10 text-white md:flex">
           <div>
-            <div className="mb-8 flex items-center gap-3">
+            <div className="mb-18 flex items-center gap-3">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-teal-700">
                 <Check className="h-6 w-6 text-white" strokeWidth={3} />
               </div>
@@ -87,7 +87,7 @@ export default function SignInPage() {
  
           <div>
             <div className="mb-4 border-t border-white/20" />
-            <div className="flex gap-6 text-xs text-slate-300">
+            <div className="flex h-40 gap-6 text-xs text-slate-300">
               <span>Secure access</span>
               <span>Consistent experience</span>
             </div>
@@ -95,13 +95,13 @@ export default function SignInPage() {
         </div>
  
         {/* Right panel */}
-        <div className="w-full p-10 md:w-1/2">
+        <div className="w-3/5 p-20">
           <div className="mb-8">
             <h2 className="text-3xl font-extrabold text-[#0f2a4a]">Sign in</h2>
             <p className="mt-1 text-sm text-slate-500">Enter your account details to continue.</p>
           </div>
  
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
             <div className="space-y-1.5">
               <label htmlFor="email" className="text-sm font-semibold text-[#0f2a4a]">
                 Email address
@@ -147,7 +147,7 @@ export default function SignInPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full rounded-md bg-teal-700 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-60"
+              className="w-full rounded-md bg-teal-700 px-4 py-3 mt-4 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {isSubmitting ? 'Signing in…' : 'Sign in'}
             </button>
