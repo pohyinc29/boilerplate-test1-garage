@@ -31,7 +31,7 @@ Outcome: **pass** — all required confirmations met.
 | Sign-in page shows **Sign in**, **Email address**, **Password**, and the **Sign in** button | Passed | |
 | Empty password / invalid email shows inline errors | Passed | **Password is required** and/or **Please enter a valid email address** |
 | URL stays `/auth/signin` after validation errors | Passed | |
-| Wrong credentials show toast **Invalid email or password** | Passed | e.g. `wrong@example.com` / `wrongpassword` |
+| Wrong credentials show toast **Invalid email or password** | Passed | |
 | URL stays `/auth/signin` after auth failure (no redirect to `/team`) | Passed | Team page not shown |
 
 ### B. Redirect to team page without a login
